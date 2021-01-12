@@ -11,11 +11,13 @@ def phi(n):
             result+=1
     return result 
 
-x = np.arange(1,10001)
+x = np.arange(1,101)
+y = np.array([phi(i) for i in x])
+"""
 y = []
 for i in x:
     y.append(phi(i))
-
+"""
 for i, j in zip(x, y):
     print(i, "\t\t", j)
 
